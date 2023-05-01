@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+var
+função divisao(dividendo,divisor,c:inteiro):inteiro
+inicio
+   se dividendo<divisor entao
+      retorne (c)
+   senao
+      dividendo<- (dividendo - divisor)
+      c<-c+1
+      retorne divisao(dividendo,divisor,c)
+   fimse
+fimfunção
+divisor,dividendo,valor,c,b:inteiro
+
+Inicio
+   c<-0
+   valor <-1
+   leia(dividendo)
+   leia(divisor)
+   b <- divisao(dividendo,divisor,c)
+   escreva ("resultado ",b)
+
+Fimalgoritmo
